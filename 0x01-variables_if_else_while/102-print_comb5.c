@@ -1,28 +1,42 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Print all possible combinations fo single-digit numbers.
+ * Description: Print all possible combinations of two two-digit numbers.
  * Numbers must be separated by commas and a space.
  * Return: 0
  */
 int main(void)
 {
-	int a, b, c;
+	int i, j;
+	int a, b, c, d;
 
-	for (a = 0; a < 100; a++)
+	for (i = 0; i < 100; i++)
 	{
-		b = a / 10;
-		c = a % 10;
+		a = i / 10;
+		b = i % 10;
 
-		putchar(b + '0');
-		putchar(c + '0');
-
-		if (a < 99)
+		for (j = 0; j < 100; j++)
 		{
-			putchar(44);
-			putchar(32);
+			c = j / 10;
+			d = j % 10;
+
+			if (a < c || (a == c && b < d))
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
