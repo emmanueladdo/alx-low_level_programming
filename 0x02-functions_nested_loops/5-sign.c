@@ -19,7 +19,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_purchar('0')
+		_purchar('0');
 		return (0);
 	}
 }
