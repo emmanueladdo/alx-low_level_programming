@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_last_digit - prints last didit
+ * print_last_digit - prints last didit
  * Return: -  0 if succesful
  * @n: int value
  *
