@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+#include "main.h"
 /**
  * main - Entry point
  * Description - this prnts _putchar with using printf
@@ -9,10 +7,14 @@
  */
 int main(void)
 {
-	int lenString;
+	char puChar[] = "_putchar";
+	int i = 0;
 
-	lenString = strlen("_putchar");
-	write(1, "_putchar", lenString);
-	putchar('\n');
-	return (0);
+	while (puChar[i] != '\0')
+	{
+		_putchar(puChar[i]);
+		i++;
+	}
+	_putchar('\n');
+return (0);
 }
