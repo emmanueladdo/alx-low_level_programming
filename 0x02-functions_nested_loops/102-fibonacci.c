@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	int first = 1, second = 2, third, counter;
+	long int first = 1, second = 2, third;
+	int i;
 
-	printf("%d, %d, ", first, second);/*prints first two*/
-		for (counter = 2; counter <= 50; counter++)/*loop start from  2*/
+	printf("%ld, %ld, ", first, second);/*prints first two*/
+		for (i = 2; i < 50; i++)/*loop start from  2*/
 		{
 			third = first + second;
-			printf("%i, ", third);
+			printf("%li, ", third);
 			first = second;
 			second = third;
 		}
