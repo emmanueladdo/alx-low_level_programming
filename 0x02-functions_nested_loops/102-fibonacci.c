@@ -13,8 +13,16 @@ int main(void)
 	printf("%ld, %ld, ", first, second);/*prints first two*/
 		for (i = 2; i < 50; i++)/*loop start from  2*/
 		{
+			if (i == 49)
+			{
 			third = first + second;
-			printf("%li, ", third);
+			printf("%li\n", third);
+			}
+			else
+			{
+				third = first + second;
+				printf("%li, ", third);
+			}
 			first = second;
 			second = third;
 		}
