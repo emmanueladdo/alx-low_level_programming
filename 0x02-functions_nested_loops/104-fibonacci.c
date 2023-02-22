@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long int first = 1, second = 2, third;
+	unsigned long first = 1, second = 2, third;
 	int i;
 
 	printf("%ld, %ld, ", first, second);/*prints first two*/
