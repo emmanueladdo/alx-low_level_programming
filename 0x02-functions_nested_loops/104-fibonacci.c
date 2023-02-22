@@ -13,7 +13,7 @@ int main(void)
 	printf("%ld, %ld, ", first, second);/*prints first two*/
 		for (i = 2; i < 98; i++)/*loop start from  2*/
 		{
-			if (i == 97)
+			if (i == 96)
 			{
 			third = first + second;
 			printf("%li\n", third);
