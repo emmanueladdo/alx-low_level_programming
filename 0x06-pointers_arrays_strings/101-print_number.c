@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * print_number - concatenates two strings
  * @n: interger value to return
  * Return: pointer to resulting to first string `dest`
  */
