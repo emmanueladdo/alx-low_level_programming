@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_prine_number - function for prime numbers
+ * is_prime_number - function for prime numbers
  * @n: is number to examine
  * Return: provde return condition
  */
