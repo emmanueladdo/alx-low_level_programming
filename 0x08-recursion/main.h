@@ -9,4 +9,7 @@ int _sqrt_recursion(int n);
 int helper(int c, int i);
 int is_prime_number(int n);
 int _putchar(char c);
+int is_palindrome(char *s);
+int my_pal(char *s, int l);
+int get_length(char *s);
 #endif /* MAIN_H*/
