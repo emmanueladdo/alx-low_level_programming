@@ -17,3 +17,4 @@ typedef struct printer
 	void (*print)(va_list arg);
 
 } printer_t;
+#endif 
