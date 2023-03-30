@@ -3,7 +3,7 @@
 void before_main(void) __attribute__ ((constructor));
 
 /**
- * before_main - A function that prints a message before the main function is executed.
+ * before_main - A function that prints a message before main is executed.
  */
 void before_main(void)
 {
