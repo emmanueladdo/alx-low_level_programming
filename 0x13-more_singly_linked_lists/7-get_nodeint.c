@@ -8,7 +8,7 @@
  * Return: A pointer to the nth node of the list, NULL if it does not exist.
  */
 
-listint *get_nodeint_at_index(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *current = head;
 	unsigned int c = 0;
