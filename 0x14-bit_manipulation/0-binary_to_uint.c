@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *binary_to_uint - coverts to binary 
+ *binary_to_uint - coverts to binary
  *@b: pointer to 1 and 0 chars
- *Return: the converted number 
+ *Return: the converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
 	int len = 0;
 
-	if ( b == NULL)
+	if (b == NULL)
 		return (0);
 	/*determine the length of the input string */
-	while(b[len] != '\0')
+	while (b[len] != '\0')
 	{
 		if (b[len] != '0' && b[len] != '1')
 			return (0);
