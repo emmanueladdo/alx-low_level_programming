@@ -1,24 +1,28 @@
 #include <unistd.h>
 #include <string.h>
+#include <stdlib.h>
 
-int rand()
+/**
+ * rand - function that the generate random cobination of numbers
+ *
+ * Return: the limit between the randoms 
+ */
+int rand(void)
 {
 	static int ct = -1;
 
 	ct++;
-
 	if (ct == 0)
 		return (8);
-	else if (ct == 1)
+	if (ct == 1)
 		return (8);
-	else if (ct == 2)
+	if (ct == 2)
 		return (7);
-	else if (ct == 3)
+	if (ct == 3)
 		return (9);
-	else if (ct == 4)
+	if (ct == 4)
 		return (23);
-	else if (ct == 5)
+	if (ct == 5)
 		return (74);
-
 	return (ct * ct % 30000);
 }
