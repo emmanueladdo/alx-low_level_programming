@@ -1,0 +1,20 @@
+#Make file for building the 'school' executable
+
+#Compiler to used
+
+CC = gcc 
+
+#list of source files
+SRC = main.c school.c 
+
+#list of object files 
+OBJ = $(SRC:.c=.o)
+
+#name of executable 
+NAME = school
+
+#default for creating exe 'school'
+
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
