@@ -1,0 +1,5 @@
+#make for 'school' executable
+
+#The default target is 'all'
+all:
+	gcc main.c school.c -o school
