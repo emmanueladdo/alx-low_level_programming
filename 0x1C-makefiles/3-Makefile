@@ -14,7 +14,7 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 
 #The program the deletes files
-RM = rm
+RM = rm -f 
 #default for creating exe 'school'
 
 all:$(OBJ)
