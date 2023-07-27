@@ -23,7 +23,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #default for creating exe 'school'
 
-all:$m.h $(OBJ)
+all:m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 
