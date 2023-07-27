@@ -1,0 +1,32 @@
+#Make file for building the 'school' executable
+
+#Compiler to used
+
+CC = gcc 
+
+#list of source files
+SRC = main.c school.c 
+
+#list of object files 
+OBJ = $(SRC:.c=.o)
+
+#name of executable 
+NAME = school
+
+#The prom the deletes files
+
+#default for creating exe 'school'
+
+all:$(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+
+clean :
+		$(RM) *~ $(NAME)
+
+oclean :
+		$(RM) $(OBJ)
+
+fclean : clean oclean
+
+re : oclean all
